@@ -1,18 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+nav {
     background-color: #000;
-    min-height: 5vh;
+}
+
+#menuDialog {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    z-index: 3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menuItem {
+    font-size: 3.3em;
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    line-height: 1em;
+}
+
+.menuItem:hover {
+    color: #F5DD07;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menuClose {
+    position: relative;
+    z-index: 4;
 }
 
 .banner {
+    position: relative;
     font-size: 24px;
     text-align: right;
     background-color: #000;
-    min-height: 90vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     color: #f5f5f5;
@@ -32,11 +66,22 @@ nav{
     line-height: 0.72em;
     text-transform: uppercase;
     letter-spacing: -10px;
-    color: #F5DD07
+    color: #F5DD07;
 }
 
-@media screen and (max-width: 480px){
-    .vendor-text{
-        font-size: 6.5em;
+.banner-text {
+    z-index: 2;
+}
+
+.banner-illustration img {
+    position: absolute;
+    left: -4.3vw;
+    top: 7vh;
+    width: 47%;
+}
+
+@media screen and (max-width: 480px) {
+    .vendor-text {
+        font-size: 6em;
     }
 }

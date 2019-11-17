@@ -14,21 +14,40 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <nav>
-        <div class="container py-3">
-            <img src="./assets/xheundaisi-logo.png" width="180" alt="">
+    <div id="menuDialog">
+      <a href="./about-us.html" class="menuItem">About Us</a>
+      <a href="./works.html" class="menuItem">Works</a>
+      <a href="./get-in-touch.html" class="menuItem">Get in Touch</a>
+    </div>
+    <nav class="navbar sticky-top">
+      <div class="container py-3">
+        <img src="./assets/xheundaisi-logo.png" width="180" alt="" />
+        <div id="menu" class="float-right text-white pt-4">
+          <i class="far fa-compass fa-2x"></i>
         </div>
+        <div id="menuClose" class="float-right text-white pt-4">
+          <i class="far fa-times-circle fa-2x"></i>
+        </div>
+      </div>
     </nav>
     <section class="banner">
-      <div class="container">
+      <div class="container banner-text">
         <p>
           Think of us an <span class="extention-text">extension</span> of your
           team rather than a
         </p>
         <p class="vendor-text">ven<br />dor</p>
       </div>
+      <div class="banner-illustration d-none d-md-block">
+        <img src="./assets/banner-illustration.png" alt="" />
+      </div>
+    </section>
+    <section class="featured-work py-5">
+      <h1 class="text-center">Featured Work</h1>
     </section>
 
+
+    <script src="./script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -42,6 +61,10 @@
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4f7ef06e39.js"
       crossorigin="anonymous"
     ></script>
   </body>
